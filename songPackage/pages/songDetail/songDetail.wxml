@@ -1,0 +1,29 @@
+<view class="songDetailContainer">
+    <view>
+        <text wx:for="{{song[0].ar}}">{{item.name}}</text>
+    </view>
+    <view class="circle"></view>
+    <image class="needle {{isPlay&&'needlePlay'}}" src="/static/images/song/needle.png" />
+    <view class="musicDisc {{isPlay&&'discPlay'}}">
+        <image class="disc" src="/static/images/song/disc.png" />
+        <image class="musicImg" src="{{song[0].al.picUrl}}" />
+    </view>
+    <!-- 进度条控制 -->
+    <view class="progressContainer">
+        <text >{{currentTime}}</text>
+        <view class="controlBar">
+            <view class="progressBar" style="width:{{progressWidth}}rpx">
+            <view class="round"></view>
+            </view>
+        </view>
+        <text >{{durationTime}}</text>
+    </view>
+    <!-- 底部控制按钮 -->
+    <view class="musicControl">
+        <text class="iconfont icon-iconsMusicyemianbofangmoshiShuffle"></text>
+        <text class="iconfont icon-shangyishou" id="pre" bindtap="handleSwitch"></text>
+        <text class="iconfont {{isPlay?'icon-zanting': 'icon-bofang'}} big" bindtap="handleMusicPlay"></text>
+        <text class="iconfont icon-next" id="next" bindtap="handleSwitch"></text>
+        <text class="iconfont icon-iconsMusicyemianbofangmoshiPlayList"></text>
+    </view>
+</view>

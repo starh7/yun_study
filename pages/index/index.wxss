@@ -1,0 +1,91 @@
+/* pages/index/index.wxss */
+.contain{
+  width: 100%;
+  height: 300rpx
+}
+image{
+  width: 100%
+}
+.navContain{
+  display: flex;
+}
+.navContain .nav_item{
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+  /* text-align: center; */
+}
+.navContain .iconfont{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #555;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 45rpx;
+  color: #fff;
+}
+
+.navContain text:last-child{
+  font-size: 25rpx;
+  padding-top: 20rpx;
+}
+
+/* 推荐歌曲模块 */
+
+
+
+/* 内容 */
+.recomand .contain{
+  display: flex;
+  margin: 20rpx;
+  
+}
+.recomand .contain .contain-item image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+.recomand .contain .contain-item text{
+  display: -webkit-box;
+  overflow: hidden;  
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 25rpx;
+}
+/*  歌曲排行榜*/
+.topListSwiper{
+  height: 400rpx;
+}
+.topListSwiper .title{
+  font-size: 30rpx;
+  /* margin: 50rpx; */
+  margin-bottom: 20rpx;
+}
+.musicItem{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.musicItem image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 6rpx;
+}
+.musicItem .count{
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.musicItem .musicName{
+  height: 100rpx;
+  line-height: 100rpx;
+  /* 多行省略 */
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}

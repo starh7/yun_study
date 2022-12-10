@@ -1,0 +1,8 @@
+<!--componts/NavHeader/NavHeader.wxml-->
+<view class='header'>
+        <text>{{title}}</text>
+        <view class='con'>
+            <text>{{nav}}</text>
+            <text >查看更多</text>
+        </view>
+    </view>

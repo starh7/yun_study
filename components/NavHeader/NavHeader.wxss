@@ -1,0 +1,22 @@
+/* componts/NavHeader/NavHeader.wxss */
+.header{
+    color: #888;
+    font-size: 25rpx;
+    padding-top: 20rpx;
+    margin: 20rpx;
+  }
+.con{
+    display: flex;
+    padding-top: 10rpx;
+    justify-content: space-between;
+    font-size: 30rpx;
+  }
+.con text:last-child{
+    font-size: 20rpx;
+    border: 1rpx solid #888;
+    border-radius: 10rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    line-height: 40rpx;
+    color: #000;
+  }
